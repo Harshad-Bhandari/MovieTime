@@ -105,6 +105,10 @@ function retrieve_id(ele) {
 
     } else {
         count -= 1;
+        if (count == 0) {
+            document.getElementById("pay").style.visibility = "hidden";
+
+        }
         if (id == t1_id) {
             ticket_numb1 = ticket_numb2;
             ticket_numb2 = ticket_numb3;
