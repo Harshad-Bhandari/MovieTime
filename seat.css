@@ -38,22 +38,22 @@ body {
 }
 
 #close {
-	border: 0px solid transparent;
-	color: white;
-	background-color: rgb(37, 37, 37);
-	border-radius: 13px;
+    border: 0px solid transparent;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border-radius: 13px;
 }
 
 #close-Btn {
-	height: 30px;
-	width: 30px;
+    height: 30px;
+    width: 30px;
 }
 
 #header-btns {
-	position: absolute;
-	top: 30px;
-	right: 38px;
-	display: flex;
+    position: absolute;
+    top: 30px;
+    right: 38px;
+    display: flex;
 }
 
 #close:hover {
@@ -447,7 +447,7 @@ input[type="checkbox"]:checked+label::after {
 
 /* Media queries */
 
-@media (width <=560px) {
+@media only screen and (max-width: 560px) {
 
     #movie-name,
     #theatre-name,
@@ -477,7 +477,7 @@ input[type="checkbox"]:checked+label::after {
     }
 }
 
-@media (width<=480px) {
+@media only screen and (max-width: 480px) {
     #seats-container {
         margin: 0px -215px 220px 0px;
     }
@@ -485,21 +485,26 @@ input[type="checkbox"]:checked+label::after {
     #seats-container {
         top: 85px;
     }
+    #close-Btn {
+        height: 25px;
+        width: 25px;
+    }
 }
 
-@media (width <=344px) {
+@media only screen and (max-width: 344px) {
 
     #movie-name,
     #theatre-name,
     #show-time {
         font-size: 0.8rem;
     }
+
     #seats-container {
         margin: 0px -300px 220px 0px;
     }
 }
 
-@media (width<=250px) {
+@media only screen and (max-width: 250px) {
     #seats-container {
         margin: 0px -386px 220px 0px;
     }
