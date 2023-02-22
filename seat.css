@@ -79,8 +79,9 @@ body {
 }
 
 #screen {
-    display: flex;
-    justify-content: center;
+	position: relative;
+	bottom: 54px;
+	left: -69px;
 }
 
 /* for all seats */
@@ -126,6 +127,7 @@ input[type="checkbox"]:checked+label::after {
     width: 600px;
     position: absolute;
     top: 95px;
+    left: 10px;
 }
 
 #row-a {
@@ -448,7 +450,7 @@ input[type="checkbox"]:checked+label::after {
 /* Media queries */
 
 @media only screen and (max-width: 560px) {
-
+    
     #movie-name,
     #theatre-name,
     #show-time {
@@ -473,13 +475,15 @@ input[type="checkbox"]:checked+label::after {
     }
 
     #seats-container {
-        margin: 0px 9px 220px 95px;
+        /* margin: 0px 9px 0px 95px; */
+        overflow: scroll;
+        width: 100vw;
     }
 }
 
 @media only screen and (max-width: 480px) {
     #seats-container {
-        margin: 0px -215px 220px 0px;
+        margin: 0px -215px 0px 0px;
     }
 
     #seats-container {
@@ -500,12 +504,12 @@ input[type="checkbox"]:checked+label::after {
     }
 
     #seats-container {
-        margin: 0px -300px 220px 0px;
+        margin: 0px -300px 0px 0px;
     }
 }
 
 @media only screen and (max-width: 250px) {
     #seats-container {
-        margin: 0px -386px 220px 0px;
+        margin: 0px -386px 0px 0px;
     }
 }
