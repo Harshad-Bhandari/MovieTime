@@ -15,7 +15,7 @@ body {
     background-color: rgb(37, 37, 37);
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     padding: 8px;
     top: 0px;
     left: 0px;
@@ -417,7 +417,7 @@ input[type="checkbox"]:checked+label::after {
 #pay {
     visibility: hidden;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 56px;
     /* top: 1050px; */
     bottom: 0px;
@@ -447,7 +447,7 @@ input[type="checkbox"]:checked+label::after {
 
 /* Media queries */
 
-@media (width <=560px) {
+@media (width <=393px) {
 
     #movie-name,
     #theatre-name,
@@ -477,7 +477,7 @@ input[type="checkbox"]:checked+label::after {
     }
 }
 
-@media (width<=360px) {
+@media (width<=260px) {
     #seats-container {
         margin: 0px -300px 220px 0px;
     }
@@ -487,7 +487,7 @@ input[type="checkbox"]:checked+label::after {
     }
 }
 
-@media (width <=250px) {
+@media (width <=150px) {
 
     #movie-name,
     #theatre-name,
@@ -496,7 +496,7 @@ input[type="checkbox"]:checked+label::after {
     }
 }
 
-@media (width<=200px) {
+@media (width<=50px) {
     #seats-container {
         margin: 0px -380px 220px 0px;
     }
