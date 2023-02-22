@@ -1,0 +1,503 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #0B0B0B;
+}
+
+/* header */
+#header-container {
+    height: auto;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 8px;
+    top: 0px;
+    left: 0px;
+}
+
+#movie-name,
+#theatre-name,
+#show-time {
+    font-size: 1.3rem;
+}
+
+#no-of-ticket {
+    width: 68px;
+    height: 31px;
+    margin: 0px 15px 0px 0px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+}
+
+#close {
+	border: 0px solid transparent;
+	color: white;
+	background-color: rgb(37, 37, 37);
+	border-radius: 13px;
+}
+
+#close-Btn {
+	height: 30px;
+	width: 30px;
+}
+
+#header-btns {
+	position: absolute;
+	top: 30px;
+	right: 38px;
+	display: flex;
+}
+
+#close:hover {
+    color: #F178B6;
+}
+
+/* seats */
+
+#seats-container {
+    height: 767px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 59px;
+    margin: 0px 0px 200px 0px;
+}
+
+#screen img {
+    position: absolute;
+    /* top: 590px; */
+    /* left: 142px; */
+    bottom: -42px;
+}
+
+#screen {
+    display: flex;
+    justify-content: center;
+}
+
+/* for all seats */
+
+fieldset {
+    border: none;
+}
+
+input[type="checkbox"] {
+    line-height: 2.1ex;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    top: 0.9ex;
+    left: 0.4ex;
+    /* border: 3px solid #1062a4; */
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#seats {
+    height: 551px;
+    width: 600px;
+    position: absolute;
+    top: 95px;
+}
+
+#row-a {
+    width: 600px;
+    height: 24px;
+}
+
+.a1+label::before,
+.a2+label::before,
+.a3+label::before,
+.a4+label::before,
+.a5+label::before,
+.a6+label::before,
+.a7+label::before,
+.a8+label::before,
+.a9+label::before,
+.a10+label::before,
+.a11+label::before,
+.a12+label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 24px;
+    width: 24px;
+    color: #F178B6;
+    text-align: center;
+    border: 1px solid #F178B6;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.a1:checked+label::before,
+.a2:checked+label::before,
+.a3:checked+label::before,
+.a4:checked+label::before,
+.a5:checked+label::before,
+.a6:checked+label::before,
+.a7:checked+label::before,
+.a8:checked+label::before,
+.a9:checked+label::before,
+.a10:checked+label::before,
+.a11:checked+label::before,
+.a12:checked+label::before {
+    content: "";
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #25C847;
+    border: 1px solid #25C847;
+}
+
+[id^="row"] div {
+    /* background-color: #25C847; */
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 29px;
+    right: 37px;
+    font-size: 19.2px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 2px 0;
+}
+
+/* for particular seats */
+/* for a1 */
+.a1+label::before {
+    content: "1";
+}
+
+.a1:checked+label::before {
+    content: "1";
+}
+
+/* for a2 */
+
+.a2+label::before {
+    content: "2";
+}
+
+.a2:checked+label::before {
+    content: "2";
+}
+
+/* for a3 */
+
+.a3+label::before {
+    content: "3";
+}
+
+.a3:checked+label::before {
+    content: "3";
+}
+
+/* for a4 */
+
+.a4+label::before {
+    content: "4";
+}
+
+.a4:checked+label::before {
+    content: "4";
+}
+
+/* for a5 */
+.a5+label::before {
+    content: "5";
+}
+
+.a5:checked+label::before {
+    content: "5";
+}
+
+/* for a6 */
+.a6+label::before {
+    content: "6";
+}
+
+.a6:checked+label::before {
+    content: "6";
+}
+
+/* for a7 */
+.a7+label::before {
+    content: "7";
+}
+
+.a7:checked+label::before {
+    content: "7";
+}
+
+/* for a8 */
+.a8+label::before {
+    content: "8";
+}
+
+.a8:checked+label::before {
+    content: "8";
+}
+
+/* for a9 */
+.a9+label::before {
+    content: "9";
+}
+
+.a9:checked+label::before {
+    content: "9";
+}
+
+/* for a10 */
+.a10+label::before {
+    content: "10";
+}
+
+.a10:checked+label::before {
+    content: "10";
+}
+
+/* for a11 */
+.a11+label::before {
+    content: "11";
+}
+
+.a11:checked+label::before {
+    content: "11";
+}
+
+/* for a12 */
+.a12+label::before {
+    content: "12";
+}
+
+.a12:checked+label::before {
+    content: "12";
+}
+
+#silver {
+    position: relative;
+    top: 321px;
+    left: 115px;
+}
+
+#gold {
+    position: relative;
+    top: -155px;
+    left: 115px;
+}
+
+#platinum {
+    position: relative;
+    top: -512px;
+    left: 115px;
+    height: 82px;
+}
+
+#silver-class {
+    position: relative;
+    top: 25px;
+    right: 83px;
+}
+
+#gold-class {
+    position: relative;
+    top: -18px;
+    right: 83px;
+}
+
+#platinum-class {
+    position: relative;
+    top: -56px;
+    right: 83px;
+}
+
+[id^="row"] {
+    position: relative;
+    right: 0px;
+}
+
+#gold-seats {
+    position: relative;
+    top: -29px;
+    right: 0;
+}
+
+#platinum-seats {
+    position: relative;
+    top: -82px;
+    right: 0;
+}
+
+#row-a {
+    top: 151px;
+}
+
+#row-b {
+    top: 87px;
+}
+
+#row-c {
+    top: -11px;
+}
+
+#row-d {
+    top: -110px;
+}
+
+#row-e {
+    top: 53px;
+}
+
+#row-f {
+    top: 39px;
+}
+
+#row-g {
+    top: 26px;
+}
+
+#row-h {
+    top: 13px;
+}
+
+#row-j {
+    top: 27px;
+}
+
+#row-k {
+    top: 13px;
+}
+
+[id^="break"] {
+    width: 600px;
+    position: relative;
+    height: 2px;
+    background-color: #2D7CFF;
+}
+
+#break-silver {
+    top: 40px;
+    left: -84px;
+}
+
+#break-gold {
+    top: 39px;
+    left: -84px;
+}
+
+/* Pay Button */
+#pay {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    /* top: 1050px; */
+    bottom: 0px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+}
+
+#pay-btn {
+    width: 150px;
+    height: 37px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    color: #2D7CFF;
+    font-size: 19.2px;
+    letter-spacing: 1%;
+    background: #fff;
+}
+
+#pay-btn:focus {
+    color: #ffffff;
+    background-color: #2D7CFF;
+    border: 1px solid white;
+}
+
+/* Media queries */
+
+@media (width <=560px) {
+
+    #movie-name,
+    #theatre-name,
+    #show-time {
+        font-size: 1.1rem;
+        margin: 0px 3px;
+    }
+
+    #header-btns {
+        position: unset;
+        margin: 7px 3px;
+    }
+
+    #no-of-ticket {
+        height: 27px;
+    }
+
+    #close {
+        z-index: 2;
+        position: absolute;
+        right: 28px;
+        top: 16px;
+    }
+
+    #seats-container {
+        margin: 0px -95px 220px 95px;
+    }
+}
+
+@media (width<=360px) {
+    #seats-container {
+        margin: 0px -300px 220px 0px;
+    }
+
+    #seats-container {
+        top: 85px;
+    }
+}
+
+@media (width <=250px) {
+
+    #movie-name,
+    #theatre-name,
+    #show-time {
+        font-size: 0.8rem;
+    }
+}
+
+@media (width<=200px) {
+    #seats-container {
+        margin: 0px -380px 220px 0px;
+    }
+}
