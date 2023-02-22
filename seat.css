@@ -19,6 +19,8 @@ body {
     padding: 8px;
     top: 0px;
     left: 0px;
+    background: linear-gradient(99.3deg, rgba(255, 255, 255, 0.42) -6.99%, rgba(255, 255, 255, 0.28) 53.22%, rgba(255, 255, 255, 0.01) 105.24%);
+    backdrop-filter: blur(12px);
 }
 
 #movie-info-container,
@@ -44,12 +46,12 @@ body {
 }
 
 #back {
-	z-index: 2;
-	position: absolute;
-	top: 16px;
-	background-color: transparent;
-	border: none;
-	color: white;
+    z-index: 2;
+    position: absolute;
+    top: 16px;
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 
 #back-Btn {
@@ -435,23 +437,23 @@ input[type="checkbox"]:checked+label::after {
     justify-content: center;
     /* align-content: center; */
     align-items: center;
+    background: linear-gradient(99.3deg, rgba(255, 255, 255, 0.42) -6.99%, rgba(255, 255, 255, 0.28) 53.22%, rgba(255, 255, 255, 0.01) 105.24%);
+    backdrop-filter: blur(12px);
 }
 
 #pay-btn {
     width: 150px;
     height: 37px;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    color: #2D7CFF;
     font-size: 19.2px;
     letter-spacing: 1%;
-    background: #fff;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
 }
-
-#pay-btn:focus {
-    color: #ffffff;
+#pay-btn:hover{
     background-color: #2D7CFF;
-    border: 1px solid white;
+
 }
 
 /* Media queries */
@@ -525,6 +527,7 @@ input[type="checkbox"]:checked+label::after {
     #seats-container {
         margin: 0px -300px 0px 0px;
     }
+
     #back-Btn {
         height: 21px;
         width: 21px;
