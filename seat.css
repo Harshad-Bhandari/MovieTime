@@ -73,9 +73,7 @@ body {
 
 #screen img {
     position: absolute;
-    /* top: 590px; */
-    /* left: 142px; */
-    bottom: -42px;
+    bottom: -93px;
 }
 
 #screen {
@@ -484,7 +482,7 @@ input[type="checkbox"]:checked+label::after {
     #screen {
         position: relative;
         left: 131px;
-        bottom: 55px;
+        bottom: -58px;
     }
 
 }
