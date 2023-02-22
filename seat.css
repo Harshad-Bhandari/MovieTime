@@ -484,8 +484,8 @@ input[type="checkbox"]:checked+label::after {
     #screen {
         position: relative;
         left: 131px;
-        bottom: 93px;
-        margin: 0 0 -53px 0;
+        bottom: 127px;
+        margin: 0px 0 -93px 0;
     }
 
 }
