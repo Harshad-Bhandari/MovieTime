@@ -21,6 +21,12 @@ body {
     left: 0px;
 }
 
+#movie-info-container,
+#show-time {
+    position: relative;
+    left: 26px;
+}
+
 #movie-name,
 #theatre-name,
 #show-time {
@@ -37,14 +43,16 @@ body {
     color: white;
 }
 
-#close {
-    border: 0px solid transparent;
-    color: white;
-    background-color: rgb(37, 37, 37);
-    border-radius: 13px;
+#back {
+	z-index: 2;
+	position: absolute;
+	top: 16px;
+	background-color: transparent;
+	border: none;
+	color: white;
 }
 
-#close-Btn {
+#back-Btn {
     height: 30px;
     width: 30px;
 }
@@ -56,7 +64,7 @@ body {
     display: flex;
 }
 
-#close:hover {
+#back:hover {
     color: #F178B6;
 }
 
@@ -463,14 +471,10 @@ input[type="checkbox"]:checked+label::after {
 
     #no-of-ticket {
         height: 27px;
+        position: relative;
+        left: 26px;
     }
 
-    #close {
-        z-index: 2;
-        position: absolute;
-        right: 28px;
-        top: 16px;
-    }
 
     #seats-container {
         /* margin: 0px 9px 0px 95px; */
@@ -488,6 +492,11 @@ input[type="checkbox"]:checked+label::after {
         bottom: -58px;
     }
 
+    #back-Btn {
+        height: 25px;
+        width: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -499,9 +508,9 @@ input[type="checkbox"]:checked+label::after {
         top: 85px;
     }
 
-    #close-Btn {
-        height: 25px;
-        width: 25px;
+    #back-Btn {
+        height: 22px;
+        width: 22px;
     }
 }
 
@@ -516,10 +525,19 @@ input[type="checkbox"]:checked+label::after {
     #seats-container {
         margin: 0px -300px 0px 0px;
     }
+    #back-Btn {
+        height: 21px;
+        width: 21px;
+    }
 }
 
 @media only screen and (max-width: 250px) {
     #seats-container {
         margin: 0px -386px 0px 0px;
+    }
+
+    #back-Btn {
+        height: 20px;
+        width: 20px;
     }
 }
